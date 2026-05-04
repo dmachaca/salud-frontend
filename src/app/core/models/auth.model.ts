@@ -4,9 +4,10 @@ export interface AuthOutputDto {
   refreshToken: string;
 }
 
-export interface LoginRequest {
+export interface LoginInputDto {
   username: string;
   password:  string;
+  recaptcha: string;
 }
 
 // Lo que guardaremos en el Signal y LocalStorage

@@ -5,7 +5,7 @@ import { Observable, tap } from 'rxjs';
 
 import { environment } from '../../../environments/environment';
 import { SESSION_CONST } from '../constants/constantes';
-import { AuthOutputDto, LoginRequest } from '../models/auth.model';
+import { AuthOutputDto, LoginInputDto } from '../models/auth.model';
 import { GenericResponse } from '../models/generic-response.model';
 
 @Injectable({
@@ -41,8 +41,8 @@ export class UsuarioService {
     this.router.navigate(['/auth/login']);
   }
 
-  login(loginRequest: LoginRequest): Observable<GenericResponse<AuthOutputDto>> {
-    return this.http.post<GenericResponse<AuthOutputDto>>(`${this.baseUrl}/login`, loginRequest).pipe(
+  login(loginInputDto: LoginInputDto): Observable<GenericResponse<AuthOutputDto>> {
+    return this.http.post<GenericResponse<AuthOutputDto>>(`${this.baseUrl}/login`, loginInputDto).pipe(
       tap(res => {
         if (res.success && res.data) {
           this.guardarDatosSesion(res.data);
