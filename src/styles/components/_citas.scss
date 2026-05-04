@@ -1,0 +1,26 @@
+@use '../core/mixins' as m;
+
+.cita-card {
+  @include m.surface;
+  @include m.elevation-1;
+
+  padding: var(--space-md);
+  border-left: 6px solid var(--color-primary);
+}
+
+.cita-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ESTADOS */
+.cita--confirmada {
+  border-left-color: var(--color-success);
+}
+
+.cita--pendiente {
+  border-left-color: var(--color-warning);
+}
+
+.cita--cancelada {
+  border-left-color: var(--color-danger);
+}

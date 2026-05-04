@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iconFlechaMovil);
+      }
+
+      .cls-2 {
+        fill: #2a70b8;
+      }
+    </style>
+    <clipPath id="clip-iconFlechaMovil">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="iconFlechaMovil" class="cls-1">
+    <path id="Trazado_16742" data-name="Trazado 16742" class="cls-2" d="M2.914-.924V13.207H14.025v4.178l8.839-7.032L14.025,3.322V7.655H8.466V-.924Z" transform="translate(-0.889 3.77)"/>
+  </g>
+</svg>

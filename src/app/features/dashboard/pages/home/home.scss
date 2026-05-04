@@ -1,0 +1,108 @@
+/* CONTENEDOR PRINCIPAL */
+.main-content {
+  width: 100%;
+  max-width: 1100px; // Un poco más de margen para que las cards grandes respiren
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 32px; // Un poco más grande
+    font-weight: 800;
+    color: #1b3a2b;
+    margin: 0;
+  }
+
+  p {
+    color: #6b7280;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+}
+
+/* GRID DE SERVICIOS */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // 4 columnas por defecto
+  gap: 25px; // Espaciado equilibrado entre cards
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD (Ajustada para ser un poco más grande) */
+.service-card {
+  background: #ffffff;
+  border-radius: 18px; // Bordes un poco más suaves
+  padding: 35px 20px; // Incrementado para dar más altura y presencia
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; // Espacio entre icono y texto
+
+  border: 1px solid #e6ecf2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #2e7d32; // Resalte con tu verde institucional
+  }
+
+  span {
+    font-size: 15px; // Texto un poco más legible
+    font-weight: 700; // Más peso para un look profesional
+    color: #1a202c;
+    text-align: center;
+  }
+}
+
+/* CONTENEDOR DE ICONO (Un poco más grande) */
+.icon-wrapper {
+  width: 70px;  // Antes 55px, ahora 70px para mayor impacto
+  height: 70px;
+  border-radius: 16px; // Estilo "squircle" más moderno que el círculo perfecto
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    font-size: 30px; // Icono más grande
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* COLORES DE ACCENTO */
+.green {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.light-green {
+  background: #f1f8e9;
+  color: #7cb342;
+}
+
+.purple {
+  background: #f3e5f5;
+  color: #8e24aa;
+}
+
+.orange {
+  background: #fff3e0;
+  color: #ef6c00;
+}

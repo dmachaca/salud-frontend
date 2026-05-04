@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-iconRegistro);
+      }
+
+      .cls-3 {
+        fill: #2a71b9;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_2348" data-name="Rectángulo 2348" class="cls-1" width="18.351" height="24.648"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectángulo_2349" data-name="Rectángulo 2349" class="cls-1" width="16.705" height="22.438"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectángulo_11028" data-name="Rectángulo 11028" class="cls-1" width="16.834" height="16.92"/>
+    </clipPath>
+    <clipPath id="clip-iconRegistro">
+      <rect width="34" height="34"/>
+    </clipPath>
+  </defs>
+  <g id="iconRegistro" class="cls-2">
+    <g id="Grupo_22560" data-name="Grupo 22560" transform="translate(-695.5 -799.5)">
+      <g id="Grupo_22555" data-name="Grupo 22555" transform="translate(700.5 800.363)">
+        <rect id="Rectángulo_2343" data-name="Rectángulo 2343" class="cls-3" width="11.558" height="1.032" transform="translate(3.447 20.951)"/>
+        <rect id="Rectángulo_2344" data-name="Rectángulo 2344" class="cls-3" width="11.558" height="1.032" transform="translate(3.447 18.518)"/>
+        <rect id="Rectángulo_2345" data-name="Rectángulo 2345" class="cls-3" width="11.558" height="1.032" transform="translate(3.447 16.085)"/>
+        <rect id="Rectángulo_2346" data-name="Rectángulo 2346" class="cls-3" width="11.558" height="1.032" transform="translate(3.447 13.652)"/>
+        <rect id="Rectángulo_2347" data-name="Rectángulo 2347" class="cls-3" width="6.083" height="1.032" transform="translate(8.922 11.219)"/>
+        <g id="Grupo_2864" data-name="Grupo 2864" transform="translate(0 3.402)">
+          <g id="Enmascarar_grupo_2863" data-name="Enmascarar grupo 2863" class="cls-4" transform="translate(0 0)">
+            <path id="Trazado_2356" data-name="Trazado 2356" class="cls-3" d="M1.932,43.608H16.521a1.934,1.934,0,0,0,1.931-1.931V20.8a1.934,1.934,0,0,0-1.931-1.932H6.367l-.04.04L4.745,20.492,1.623,23.614.041,25.2l-.04.04v16.44a1.934,1.934,0,0,0,1.931,1.931M16.831,20.8V41.676a.31.31,0,0,1-.309.309H1.932a.31.31,0,0,1-.309-.309v-15.3H5.572A1.934,1.934,0,0,0,7.5,24.441V20.492h9.018a.31.31,0,0,1,.309.309m-10.949.836v2.8a.31.31,0,0,1-.309.309h-2.8Z" transform="translate(-0.001 -18.953)"/>
+          </g>
+        </g>
+        <g id="Grupo_2866" data-name="Grupo 2866" transform="translate(5.165)">
+          <g id="Grupo_2865" data-name="Grupo 2865" class="cls-5" transform="translate(0 0)">
+            <path id="Trazado_2357" data-name="Trazado 2357" class="cls-3" d="M57.647,0H48.4L46.927,1.477,45.658,2.745h3.78V1.477h8.209a.282.282,0,0,1,.282.282v19a.282.282,0,0,1-.282.282h-.811V22.52h.811a1.76,1.76,0,0,0,1.758-1.758v-19A1.76,1.76,0,0,0,57.647,0" transform="translate(-42.608 -0.075)"/>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_22558" data-name="Grupo 22558" transform="translate(708.415 815.486)">
+        <g id="Grupo_22557" data-name="Grupo 22557" class="cls-6" transform="translate(0 0)">
+          <path id="Trazado_16513" data-name="Trazado 16513" class="cls-7" d="M15.689,10.354A5.393,5.393,0,1,1,10.3,4.962a5.392,5.392,0,0,1,5.392,5.392" transform="translate(-1.262 -1.277)"/>
+          <path id="Trazado_16514" data-name="Trazado 16514" class="cls-3" d="M8.417,16.92a8.163,8.163,0,0,1-3.282-.668A8.42,8.42,0,0,1,.662,11.759,8.274,8.274,0,0,1,0,8.461a8.278,8.278,0,0,1,.663-3.3A8.418,8.418,0,0,1,5.134.668,8.159,8.159,0,0,1,8.416,0,8.163,8.163,0,0,1,11.7.668,8.42,8.42,0,0,1,16.171,5.16a8.272,8.272,0,0,1,.663,3.3,8.278,8.278,0,0,1-.663,3.3A8.418,8.418,0,0,1,11.7,16.251a8.151,8.151,0,0,1-3.282.669M9.13,9.13l-1.18,1.188a.612.612,0,0,0-.18.46.644.644,0,0,0,.188.46.628.628,0,0,0,.464.185.617.617,0,0,0,.461-.185l2.2-2.212a.781.781,0,0,0,0-1.126L8.874,5.681a.66.66,0,0,0-.917,0,.632.632,0,0,0-.184.466.624.624,0,0,0,.184.463L9.13,7.8H5.758a.639.639,0,0,0-.473.192.688.688,0,0,0,0,.951.641.641,0,0,0,.473.192Z" transform="translate(0 0)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

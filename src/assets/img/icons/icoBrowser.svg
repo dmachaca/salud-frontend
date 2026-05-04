@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-icoBrowser">
+      <rect width="38" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="icoBrowser" clip-path="url(#clip-icoBrowser)">
+    <g id="chrome-logo-8794" transform="translate(0.502 0.496)">
+      <path id="Trazado_16458" data-name="Trazado 16458" d="M135.563,84.657H122.992a7.773,7.773,0,0,1,1.912,9.989c-.119.2-.249.4-.384.59l-7.778,13.9c.471.039.944.065,1.417.063A18.461,18.461,0,0,0,136.6,90.754,18.187,18.187,0,0,0,135.563,84.657Z" transform="translate(-99.713 -72.305)" fill="#ffcd42"/>
+      <path id="Trazado_16459" data-name="Trazado 16459" d="M18.419,72.433A7.725,7.725,0,0,1,14.554,71.4,7.813,7.813,0,0,1,11.7,68.542a7.913,7.913,0,0,1-.409-.826L3.334,54.1A18.418,18.418,0,0,0,15.273,82.813l6.14-10.972A7.818,7.818,0,0,1,18.419,72.433Z" transform="translate(0 -46.202)" fill="#19a15f"/>
+      <path id="Trazado_16460" data-name="Trazado 16460" d="M40.386,11.709a7.78,7.78,0,0,1,4.731-1H61.01A18.419,18.419,0,0,0,30.247,6.488l6.334,10.841A7.763,7.763,0,0,1,40.386,11.709Z" transform="translate(-25.836 0)" fill="#dd5044"/>
+      <path id="Trazado_16461" data-name="Trazado 16461" d="M84.546,86.887a6.24,6.24,0,1,0,5.417-3.113h0A6.208,6.208,0,0,0,84.546,86.887Z" transform="translate(-71.501 -71.551)" fill="#4b8bf4"/>
+    </g>
+  </g>
+</svg>

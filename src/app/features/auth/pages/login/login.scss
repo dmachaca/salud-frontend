@@ -1,0 +1,130 @@
+:host {
+  display: block;
+}
+
+/* CONTENEDOR */
+.container-login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #e8f5e9, #f4f8f6);
+  position: relative;
+}
+
+/* WRAPPER */
+.login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.login-card {
+  width: 380px;
+  padding: 30px;
+
+  background: #ffffff;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top: 5px solid #2E7D32;
+}
+
+/* LOGO */
+.logo-salud {
+  width: 70px;
+  margin-bottom: 8px;
+}
+
+/* TITULO */
+.login-title {
+  margin: 4px 0;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+
+  color: #2E7D32; /* 🔥 VERDE PRIMARIO */
+}
+
+/* SUBTITULO */
+.login-subtitle {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+
+  color: #2E7D32; /* 🔥 MISMO VERDE */
+  opacity: 0.8;
+}
+
+/* INPUTS */
+.form-fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BOTON */
+.login-button {
+  width: 100%;
+  height: 48px;
+
+  border-radius: 10px;
+  border: none;
+
+  background: linear-gradient(90deg, #2E7D32, #66BB6A);
+  color: white;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  margin-top: 5px;
+  transition: all 0.2s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(46,125,50,0.3);
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* LINK */
+.olvideContrasena {
+  text-align: center;
+  color: #2E7D32;
+  font-size: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.olvideContrasena:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER FUERA DEL CARD */
+.chrome-info {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.chrome-info img {
+  width: 28px;
+  margin: 5px 0;
+}

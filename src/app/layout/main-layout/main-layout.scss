@@ -1,0 +1,25 @@
+/* Evita que la página entera tenga scroll */
+html, body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layout-container {
+  display: flex;
+  /* 100vh - (Header + Footer) */
+  /* Si tu header mide 64px y tu footer 60px = 124px */
+  height: calc(100vh - 124px);
+  background: #f4f7fb;
+  overflow: hidden; // Bloquea scroll lateral
+}
+
+.content {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto; // Solo el centro tendrá scroll si hay mucho contenido
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

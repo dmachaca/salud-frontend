@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#77B944;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#BABABA;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#252A56;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:#BCBDB7;}
+	.st6{fill:#252A56;}
+	.st7{fill:#FAB724;}
+	.st8{fill:#E4072D;}
+	.st9{fill:#DD102F;}
+	.st10{fill:#F9B91F;}
+	.st11{fill:#76B82A;}
+	.st12{fill:#BCBCBB;}
+	.st13{fill:#1C3A69;}
+</style>
+<g>
+	<path class="st8" d="M22.99,11.49C22.72,5.66,17.9,1,12,1C5.93,1,1,5.94,1,12c0,5.9,4.66,10.72,10.5,10.99C11.66,23,11.83,23,12,23
+		c6.07,0,11-4.93,11-11C23,11.83,23,11.66,22.99,11.49z M12,20.84c-1.16,0-2.27-0.22-3.28-0.63C5.46,18.9,3.16,15.72,3.16,12
+		c0-4.88,3.96-8.84,8.84-8.84c3.72,0,6.9,2.3,8.21,5.56c0.41,1.01,0.63,2.12,0.63,3.28C20.84,16.87,16.88,20.84,12,20.84z"/>
+	<path class="st8" d="M16.8,7.2c-0.53-0.53-1.39-0.53-1.91,0L12,10.09L9.11,7.2c-0.53-0.53-1.39-0.53-1.91,0
+		c-0.53,0.53-0.53,1.39,0,1.91L10.09,12L7.2,14.89c-0.53,0.53-0.53,1.39,0,1.91c0.26,0.26,0.61,0.4,0.96,0.4
+		c0.35,0,0.69-0.13,0.96-0.4L12,13.91l2.89,2.89c0.26,0.26,0.61,0.4,0.96,0.4s0.69-0.13,0.96-0.4c0.53-0.53,0.53-1.39,0-1.91
+		L13.91,12l2.89-2.89C17.33,8.58,17.33,7.73,16.8,7.2z"/>
+</g>
+</svg>

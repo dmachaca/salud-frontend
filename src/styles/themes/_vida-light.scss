@@ -1,0 +1,14 @@
+@use '@angular/material' as mat;
+
+$vida-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$green-palette,
+    tertiary: mat.$cyan-palette
+  ),
+  density: (scale: -5)
+));
+
+:root {
+  @include mat.all-component-themes($vida-theme);
+}

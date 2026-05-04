@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iconBorrar1);
+      }
+
+      .cls-2 {
+        fill: #003770;
+      }
+    </style>
+    <clipPath id="clip-iconBorrar1">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="iconBorrar1" class="cls-1">
+    <path id="delete_24dp_5F6368_FILL1_wght400_GRAD0_opsz24" class="cls-2" d="M163.26-820.441a2.093,2.093,0,0,1-1.535-.638,2.093,2.093,0,0,1-.638-1.535V-836.74H160v-2.173h5.433V-840h6.52v1.087h5.433v2.173H176.3v14.126a2.093,2.093,0,0,1-.638,1.535,2.093,2.093,0,0,1-1.535.638Zm2.173-4.346h2.173v-9.779h-2.173Zm4.346,0h2.173v-9.779h-2.173Z" transform="translate(-156.692 842.221)"/>
+  </g>
+</svg>

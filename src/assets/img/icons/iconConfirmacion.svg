@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2a71b9;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-iconConfirmacion);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_6029" data-name="Rectángulo 6029" class="cls-1" width="60.012" height="60.012"/>
+    </clipPath>
+    <clipPath id="clip-iconConfirmacion">
+      <rect width="72" height="72"/>
+    </clipPath>
+  </defs>
+  <g id="iconConfirmacion" class="cls-2">
+    <g id="Grupo_10142" data-name="Grupo 10142" transform="translate(5.76 5.76)">
+      <path id="Trazado_6468" data-name="Trazado 6468" class="cls-1" d="M6.8,6.8h6.8v6.263l-.537.537H6.8ZM0,20.041H20.041V0H0Z"/>
+      <path id="Trazado_6469" data-name="Trazado 6469" class="cls-1" d="M119.442,13.062V6.8h6.8v6.8h-6.263ZM113,20.041h20.041V0H113Z" transform="translate(-72.56)"/>
+      <path id="Trazado_6470" data-name="Trazado 6470" class="cls-1" d="M6.8,119.442h6.263l.537.537v6.263H6.8ZM0,133.041H20.041V113H0Z" transform="translate(0 -72.56)"/>
+      <g id="Grupo_10139" data-name="Grupo 10139" transform="translate(0.157 0.311)">
+        <g id="Grupo_10138" data-name="Grupo 10138" class="cls-3" transform="translate(0 0)">
+          <path id="Trazado_6471" data-name="Trazado 6471" class="cls-1" d="M95.041,81.8c-2.142-.014-4.3.01-6.442,0V75h6.442c.016,2.261-.023,4.539,0,6.8,2.261.015,4.539.014,6.8,0,.014-2.261-.01-4.538,0-6.8h6.8v6.8c-2.261.01-4.538-.014-6.8,0-.014,2.261.008,4.538,0,6.8,2.261.022,4.539-.016,6.8,0V101.84c-2.261.01-4.538-.014-6.8,0-.013,2.261.009,4.538,0,6.8h-6.8c-.009-2.261.013-4.538,0-6.8-4.408.02-8.833-.014-13.241,0v6.8H75v-13.6H88.6V88.6h6.442c.019,4.408-.025,8.833,0,13.241,2.261-.01,4.538.014,6.8,0,.025-4.408-.016-8.833,0-13.241-1.146-.011-6.225.266-6.644-.335a48.525,48.525,0,0,1-.156-6.465" transform="translate(-48.316 -48.471)"/>
+          <path id="Trazado_6472" data-name="Trazado 6472" class="cls-1" d="M69.6,75V88.062l-.537.537H63.336l-.537-.537V81.8H56.537L56,81.263V75.537L56.537,75Z" transform="translate(-36.116 -48.471)"/>
+          <rect id="Rectángulo_6027" data-name="Rectángulo 6027" class="cls-1" width="6.73" height="13.461" transform="translate(26.921 6.73)"/>
+          <rect id="Rectángulo_6028" data-name="Rectángulo 6028" class="cls-1" width="6.73" height="6.73" transform="translate(0 26.36)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

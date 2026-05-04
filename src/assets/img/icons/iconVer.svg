@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iconVer);
+      }
+
+      .cls-2 {
+        fill: #003770;
+      }
+    </style>
+    <clipPath id="clip-iconVer">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="iconVer" class="cls-1">
+    <g id="Grupo_22649" data-name="Grupo 22649" transform="translate(0.494 4.904)">
+      <path id="Trazado_613" data-name="Trazado 613" class="cls-2" d="M1052.176,591.527c5.238.246,9.091,2.461,11.607,6.9a.371.371,0,0,1,.006.418,12.744,12.744,0,0,1-9.436,6.7,12.919,12.919,0,0,1-13.457-6.711.351.351,0,0,1,0-.378,12.818,12.818,0,0,1,8.792-6.6C1050.553,591.664,1051.457,591.618,1052.176,591.527Zm-4.539,7.117a4.709,4.709,0,1,0,4.709-4.708A4.7,4.7,0,0,0,1047.637,598.644Z" transform="translate(-1040.839 -591.527)"/>
+      <path id="Trazado_614" data-name="Trazado 614" class="cls-2" d="M1056.542,598.475a2.352,2.352,0,1,1-2.355,2.348A2.343,2.343,0,0,1,1056.542,598.475Z" transform="translate(-1045.032 -593.71)"/>
+    </g>
+  </g>
+</svg>

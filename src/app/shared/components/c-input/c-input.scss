@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+::ng-deep {
+  /* Elimina el espacio para mensajes de error que estira el card */
+  .mat-mdc-form-field-subscript-wrapper,
+  .mat-mdc-form-field-bottom-align {
+    display: none !important;
+  }
+
+  /* Altura fija y centrada */
+  .mat-mdc-text-field-wrapper {
+    height: 45px !important; // Más delgado para reducir el tamaño del card
+    padding: 0 4px !important;
+    background-color: transparent !important;
+  }
+
+  /* Quitar el círculo gris del ojo que marcaste en rojo */
+  .mat-mdc-icon-button {
+    --mdc-icon-button-state-layer-size: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+  }
+}
+
+/* Color verde institucional */
+.password-toggle-btn mat-icon {
+  color: #2E7D32 !important;
+  font-size: 20px;
+}
+
+/* Borde verde al enfocar */
+.mat-mdc-form-field.mat-focused {
+  .mdc-notched-outline__leading,
+  .mdc-notched-outline__notch,
+  .mdc-notched-outline__trailing {
+    border-color: #2E7D32 !important;
+    border-width: 2px !important;
+  }
+}

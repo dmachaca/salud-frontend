@@ -1,0 +1,105 @@
+@use './core';
+@use './themes/vida-light';
+@use './themes/vida-dark';
+
+@use './components/buttons';
+@use './components/forms';
+@use './components/login';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ==========================================================================
+   ESTÁNDAR PROFESIONAL: LOGIN COMPACTO SALUD
+   ========================================================================== */
+
+/* 1. COMPACTACIÓN DE TARJETA (Basado en image_10fd94.png) */
+.login-card {
+  max-width: 340px !important;
+  padding: 25px 30px 15px 30px !important;
+  border-top: 5px solid #2E7D32 !important;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+/* 2. CONTROL DE INPUTS Y ESPACIOS MORADOS */
+/* Reducimos la altura y eliminamos el aire innecesario del subscript */
+.login-card .mat-mdc-text-field-wrapper {
+  height: 42px !important;
+  padding: 0 12px !important;
+  display: flex;
+  align-items: center;
+}
+
+.login-card .mat-mdc-form-field-flex {
+  height: 100% !important;
+  align-items: center !important;
+}
+
+/* 3. SOPORTE PARA MENSAJES DE ERROR (Campo obligatorio) */
+/* El estándar es que el error no ocupe espacio hasta que aparece */
+.login-card .mat-mdc-form-field-subscript-wrapper {
+  height: 0px !important;
+  overflow: visible !important; // Permite que el texto de error "flote"
+}
+
+.login-card .mat-mdc-form-field-error {
+  font-size: 11px !important;
+  color: #d32f2f !important; // Rojo estándar médico
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* 4. LIMPIEZA TOTAL DEL ICONO DEL OJO */
+/* Elimina definitivamente el círculo gris de image_110cdb.jpg */
+.login-card .mat-mdc-icon-button {
+  --mdc-icon-button-state-layer-size: 0px !important;
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  color: #2E7D32 !important;
+}
+
+.login-card .mat-mdc-icon-button mat-icon {
+  font-size: 20px !important;
+}
+
+/* 5. DISTRIBUCIÓN DE CAMPOS Y BOTÓN */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px !important; // Espacio suficiente para la validación
+}
+
+.form-fields app-c-input {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.login-button {
+  margin-top: 10px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+  font-weight: 600;
+}
+
+/* 6. LOGO Y TEXTOS */
+.logo-salud {
+  margin-bottom: 8px !important;
+}
+
+.login-title {
+  margin-top: 0 !important;
+  margin-bottom: 2px !important;
+  font-size: 24px !important;
+}
+
+.login-subtitle {
+  margin-bottom: 20px !important;
+  font-size: 13px !important;
+}

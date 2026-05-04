@@ -1,0 +1,29 @@
+:root {
+  /* 🌿 BRAND VIDA */
+  --color-primary: #2E7D32;
+  --color-primary-light: #66BB6A;
+  --color-primary-dark: #1B5E20;
+
+  /* Estados */
+  --color-success: #43A047;
+  --color-warning: #FBC02D;
+  --color-danger: #E53935;
+
+  /* UI */
+  --color-bg: #F4F8F6;
+  --color-surface: #FFFFFF;
+  --color-text: #1B3A2B;
+  --color-border: #E0E0E0;
+
+  /* Layout */
+  --radius: 12px;
+  --space-md: 16px;
+}
+
+/* 🌙 Dark mode */
+.dark-theme {
+  --color-bg: #121212;
+  --color-surface: #1E1E1E;
+  --color-text: #E0E0E0;
+  --color-border: #333;
+}

@@ -1,0 +1,67 @@
+<div
+  class="content-input-material"
+  (drop)="onDrop($event)"
+  (dragover)="onDragOver($event)">
+
+  <mat-form-field appearance="outline" class="mfl w-full">
+
+    <!-- LABEL MATERIAL (usar este, no custom) -->
+    <mat-label>{{ label }}</mat-label>
+
+    <!-- INPUT -->
+    <input
+      #inputRef
+      matInput
+      [type]="inputType"
+      [placeholder]="placeholder"
+      [value]="value"
+      [attr.maxlength]="maxLength || null"
+      [attr.minlength]="minLength || null"
+      [attr.pattern]="pattern || null"
+      [readonly]="readonly"
+      [disabled]="disabled"
+      (input)="onInput($event)"
+      (blur)="onBlur()"
+      (paste)="onPaste($event)"
+      [style.text-transform]="upperCase ? 'uppercase' : 'none'"
+    />
+
+    <!-- ICON PREFIX -->
+    @if (icon && type !== 'password') {
+      <mat-icon matPrefix class="prefix-icon">
+        {{ icon }}
+      </mat-icon>
+    }
+
+    <!-- PASSWORD TOGGLE (CORREGIDO) -->
+    @if (type === 'password') {
+      <div matSuffix class="password-icon-container" (click)="togglePassword()">
+        <mat-icon class="toggle-icon">
+          {{ hidePassword ? 'visibility_off' : 'visibility' }}
+        </mat-icon>
+      </div>
+    }
+
+    <!-- CONTADOR -->
+    @if (showCounter && maxLength) {
+      <mat-hint align="end">
+        {{ value.length || 0 }}/{{ maxLength }}
+      </mat-hint>
+    }
+
+    <!-- VALIDACIONES -->
+    @if (submitted && minLength && value.length < minLength) {
+      <mat-error>
+        Mínimo {{ minLength }} caracteres
+      </mat-error>
+    }
+
+    @if (submitted && pattern && value && !value.match(pattern)) {
+      <mat-error>
+        Formato inválido
+      </mat-error>
+    }
+
+  </mat-form-field>
+
+</div>

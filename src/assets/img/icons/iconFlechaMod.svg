@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iconFlechaMod);
+      }
+
+      .cls-2 {
+        fill: #2a70b8;
+      }
+    </style>
+    <clipPath id="clip-iconFlechaMod">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="iconFlechaMod" class="cls-1">
+    <g id="Grupo_22880" data-name="Grupo 22880" transform="translate(-760.329 -533.268)">
+      <rect id="Rectángulo_11135" data-name="Rectángulo 11135" class="cls-2" width="7" height="7" transform="translate(765 541.866)"/>
+      <path id="Polígono_116" data-name="Polígono 116" class="cls-2" d="M8.866,0l8.866,11.144H0Z" transform="translate(781.129 536.402) rotate(90)"/>
+    </g>
+  </g>
+</svg>

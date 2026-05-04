@@ -1,0 +1,16 @@
+@use '@angular/material' as mat;
+
+$vida-dark: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$green-palette,
+    tertiary: mat.$cyan-palette
+  ),
+  density: (
+    scale: 0
+  )
+));
+
+.dark-theme {
+  @include mat.all-component-colors($vida-dark);
+}

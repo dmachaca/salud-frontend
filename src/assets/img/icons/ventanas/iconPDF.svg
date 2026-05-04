@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-iconPDF);
+      }
+
+      .cls-2 {
+        fill: #e74c3c;
+      }
+
+      .cls-3 {
+        fill: #c0392b;
+      }
+
+      .cls-4 {
+        fill: #262626;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-iconPDF">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="iconPDF" class="cls-1">
+    <g id="ico_file_pdf" transform="translate(9 10)">
+      <g id="Grupo_22427" data-name="Grupo 22427" transform="translate(2.422 0)">
+        <g id="Grupo_22426" data-name="Grupo 22426">
+          <path id="Trazado_16462" data-name="Trazado 16462" class="cls-2" d="M146.9,212.357v17.149a2.02,2.02,0,0,0,2.014,2.014h20.6a2.02,2.02,0,0,0,2.014-2.014V206.014A2.02,2.02,0,0,0,169.516,204H155.258" transform="translate(-146.901 -204)"/>
+          <g id="Grupo_22425" data-name="Grupo 22425" transform="translate(0 0.034)">
+            <path id="Trazado_16463" data-name="Trazado 16463" class="cls-3" d="M146.9,8.357h6.343a2.02,2.02,0,0,0,2.014-2.014V0" transform="translate(-146.901)"/>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_22428" data-name="Grupo 22428" transform="translate(0 13.793)">
+        <path id="Trazado_16464" data-name="Trazado 16464" class="cls-4" d="M76.152,587.881h2.184V585l-2.381,2.966h0A.239.239,0,0,1,76.152,587.881Z" transform="translate(-75.914 -585)"/>
+        <path id="Trazado_16465" data-name="Trazado 16465" class="cls-4" d="M882.943,587.881h-2.184V585l2.381,2.966h0A.239.239,0,0,0,882.943,587.881Z" transform="translate(-853.709 -585)"/>
+        <path id="Trazado_16466" data-name="Trazado 16466" class="cls-3" d="M101.915,677.231a.522.522,0,0,1-.454.314H77.5a.522.522,0,0,1-.454-.314l-2.284-6.084a.217.217,0,0,1,.218-.314h29a.217.217,0,0,1,.218.314Z" transform="translate(-74.747 -667.952)"/>
+      </g>
+      <g id="Grupo_22429" data-name="Grupo 22429" transform="translate(8.743 18.069)">
+        <path id="Trazado_16467" data-name="Trazado 16467" class="cls-5" d="M335.251,803.157a.5.5,0,0,1,.149-.39.622.622,0,0,1,.435-.137.585.585,0,0,1,.417.137.51.51,0,0,1,.145.39.5.5,0,0,1-.15.385.584.584,0,0,1-.413.139.627.627,0,0,1-.428-.137A.487.487,0,0,1,335.251,803.157Z" transform="translate(-335.251 -799.602)"/>
+        <path id="Trazado_16468" data-name="Trazado 16468" class="cls-5" d="M392.432,713.672a1.343,1.343,0,0,1-.4,1.038,1.6,1.6,0,0,1-1.126.366h-.3v1.33h-1.083V712.4h1.388a1.7,1.7,0,0,1,1.141.332A1.184,1.184,0,0,1,392.432,713.672Zm-1.827.521h.2a.539.539,0,0,0,.388-.137.5.5,0,0,0,.144-.379q0-.406-.45-.406h-.28Z" transform="translate(-387.701 -712.396)"/>
+        <path id="Trazado_16469" data-name="Trazado 16469" class="cls-5" d="M498.689,714.316a2.071,2.071,0,0,1-.553,1.547,2.123,2.123,0,0,1-1.554.543h-1.3V712.4h1.388a2.094,2.094,0,0,1,1.491.494A1.863,1.863,0,0,1,498.689,714.316Zm-1.125.038a1.275,1.275,0,0,0-.218-.817.807.807,0,0,0-.662-.266h-.315v2.247h.241a.874.874,0,0,0,.724-.287A1.385,1.385,0,0,0,497.564,714.354Z" transform="translate(-489.914 -712.396)"/>
+        <path id="Trazado_16470" data-name="Trazado 16470" class="cls-5" d="M619.2,716.406h-1.067V712.4h2.37v.87h-1.3v.765h1.2v.87h-1.2Z" transform="translate(-608.638 -712.396)"/>
+      </g>
+      <g id="Grupo_22433" data-name="Grupo 22433" transform="translate(7.359 9.83)">
+        <g id="Grupo_22431" data-name="Grupo 22431" transform="translate(0 0)">
+          <path id="Trazado_16472" data-name="Trazado 16472" class="cls-5" d="M308.62,445.324c0,.277-.3.5-.671.5H294.688c-.369,0-.671-.227-.671-.5s.3-.5.671-.5h13.261C308.318,444.821,308.62,445.048,308.62,445.324Z" transform="translate(-294.017 -444.821)"/>
+        </g>
+        <g id="Grupo_22432" data-name="Grupo 22432" transform="translate(0.028 3.027)">
+          <path id="Trazado_16473" data-name="Trazado 16473" class="cls-5" d="M309.455,535.519c0,.277-.3.5-.671.5H295.523c-.369,0-.671-.227-.671-.5s.3-.5.671-.5h13.261C309.153,535.016,309.455,535.243,309.455,535.519Z" transform="translate(-294.852 -535.016)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

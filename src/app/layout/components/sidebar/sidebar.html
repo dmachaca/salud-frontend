@@ -1,0 +1,33 @@
+<aside class="sidebar">
+
+  <!-- LOGO -->
+  <div class="sidebar__top">
+    <img src="assets/logos/citas-svg.svg" alt="logo">
+  </div>
+
+  <!-- MENU -->
+  <nav class="sidebar__menu">
+    <ul>
+      @for (item of menu; track item.path) {
+        <li [class.active]="isActive(item.path)">
+          <button (click)="navigate(item.path)">
+            <mat-icon>{{ item.icon }}</mat-icon>
+            <span class="label">{{ item.label }}</span>
+          </button>
+        </li>
+      }
+    </ul>
+  </nav>
+
+  <!-- FOOTER -->
+  <!--  <div class="sidebar__footer">
+   <div class="user">
+     <mat-icon>account_circle</mat-icon>
+     <div class="user-info">
+       <h4>{{ userName }}</h4>
+       <span>Cerrar sesión</span>
+     </div>
+   </div>
+ </div>-->
+
+</aside>

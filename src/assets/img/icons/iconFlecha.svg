@@ -1,0 +1,16 @@
+<svg id="Componente_386_10" data-name="Componente 386 – 10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0.004;
+      }
+
+      .cls-2 {
+        fill: #d3d3d3;
+      }
+    </style>
+  </defs>
+  <rect id="Rectángulo_10967" data-name="Rectángulo 10967" class="cls-1" width="24" height="24"/>
+  <path id="chevron_right_24dp" class="cls-2" d="M326.69-711.274l-6.69-6.69L322.036-720l8.726,8.726-8.726,8.726L320-704.584Z" transform="translate(-313 723.001)"/>
+</svg>

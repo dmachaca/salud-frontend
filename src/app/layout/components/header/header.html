@@ -1,0 +1,36 @@
+<header class="header">
+
+  <!-- LOGO -->
+  <div class="header__logos">
+    <img src="/assets/logos/citas-svg.svg" alt="logo">
+  </div>
+
+  <!-- SESION -->
+  @if (showSesion) {
+    <div class="content__sesion_cerrar">
+
+      <img src="assets/img/icons/icoSession.svg" alt="user">
+
+      <div
+        class="content__sesion_user"
+        (click)="logout()"
+        (keydown)="onKeyDown($event)"
+        tabindex="0"
+      >
+        <h2>{{ usuarioPerfil }}</h2>
+        <span>Cerrar Sesión</span>
+      </div>
+
+    </div>
+  }
+
+  <!-- MOBILE MENU -->
+  @if (isMobile) {
+    <div class="contMenu">
+      <button class="openMenu" (click)="abrirMenu()">
+        <img src="assets/img/menu.svg" alt="menu">
+      </button>
+    </div>
+  }
+
+</header>

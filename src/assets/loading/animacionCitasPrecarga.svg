@@ -1,0 +1,35 @@
+<svg width="400" height="224" viewBox="0 0 400 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .spinner { transform-origin: center; animation: rotate 2s linear infinite; }
+    .path { 
+      stroke: #2E7D32; 
+      stroke-linecap: round; 
+      animation: dash 1.5s ease-in-out infinite; 
+    }
+    .health-cross { 
+      fill: #2E7D32; 
+      animation: pulse 1.5s ease-in-out infinite; 
+    }
+    
+    @keyframes rotate { 100% { transform: rotate(360deg); } }
+    @keyframes dash {
+      0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; }
+      50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; }
+      100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(0.85); opacity: 0.7; }
+    }
+  </style>
+
+  <!-- Círculo de Carga -->
+  <g class="spinner">
+    <circle class="path" cx="200" cy="112" r="45" stroke-width="6" fill="none" />
+  </g>
+
+  <!-- Cruz de Salud (Efecto Pulso) -->
+  <g transform="translate(200, 112)">
+    <path class="health-cross" d="M-12 -4 H-4 V-12 H4 V-4 H12 V4 H4 V12 H-4 V4 H-12 Z" />
+  </g>
+</svg>

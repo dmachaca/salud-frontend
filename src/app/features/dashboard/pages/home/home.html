@@ -1,0 +1,24 @@
+<div class="main-content">
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>¡Hola, {{ userName }}!</h1>
+    <p>Sistema de Gestión de Citas</p>
+  </header>
+
+  <!-- SERVICIOS -->
+  <div class="services-grid">
+    @for (s of services; track s) {
+      <div class="service-card" (click)="go(s.path)">
+
+        <div class="icon-wrapper" [ngClass]="s.color">
+          <mat-icon>{{ s.icon }}</mat-icon>
+        </div>
+
+        <span>{{ s.label }}</span>
+
+      </div>
+    }
+  </div>
+
+</div>

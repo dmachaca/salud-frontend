@@ -1,0 +1,88 @@
+/* CONTENEDOR */
+.mat-mdc-form-field {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+/* WRAPPER */
+.mat-mdc-text-field-wrapper {
+  border-radius: 12px;
+  background: #fafafa;
+  transition: all 0.25s ease;
+}
+
+/* BORDE NORMAL */
+.mdc-notched-outline__leading,
+.mdc-notched-outline__notch,
+.mdc-notched-outline__trailing {
+  border-color: var(--color-border);
+}
+
+/* HOVER */
+.mat-mdc-form-field:hover .mdc-notched-outline__leading,
+.mat-mdc-form-field:hover .mdc-notched-outline__notch,
+.mat-mdc-form-field:hover .mdc-notched-outline__trailing {
+  border-color: var(--color-primary-light);
+}
+
+/* FOCUS (CLAVE) */
+.mat-mdc-form-field.mat-focused .mdc-notched-outline__leading,
+.mat-mdc-form-field.mat-focused .mdc-notched-outline__notch,
+.mat-mdc-form-field.mat-focused .mdc-notched-outline__trailing {
+  border-color: var(--color-primary);
+  border-width: 2px;
+}
+
+/* LABEL NORMAL */
+.mat-mdc-form-field .mdc-floating-label {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* LABEL FOCUS */
+.mat-mdc-form-field.mat-focused .mdc-floating-label {
+  color: var(--color-primary);
+}
+
+/* TEXTO INPUT */
+.mat-mdc-input-element {
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+/* PLACEHOLDER */
+.mat-mdc-input-element::placeholder {
+  color: #9ca3af;
+}
+
+/* ERROR */
+.mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__leading,
+.mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__notch,
+.mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__trailing {
+  border-color: var(--color-danger);
+}
+
+/* LABEL ERROR */
+.mat-mdc-form-field.mat-form-field-invalid .mdc-floating-label {
+  color: var(--color-danger);
+}
+
+/* ANIMACIÓN SUTIL */
+.mat-mdc-text-field-wrapper:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* DISABLED */
+.mat-mdc-form-field.mat-form-field-disabled {
+  opacity: 0.6;
+}
+
+.mat-mdc-form-field.mat-focused .mdc-notched-outline__leading,
+.mat-mdc-form-field.mat-focused .mdc-notched-outline__notch,
+.mat-mdc-form-field.mat-focused .mdc-notched-outline__trailing {
+  border-color: #2E7D32 !important;
+}
+
+.mat-mdc-form-field.mat-focused .mdc-floating-label {
+  color: #2E7D32 !important;
+}

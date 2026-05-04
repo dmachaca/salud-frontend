@@ -1,0 +1,151 @@
+.sidebar {
+  width: 70px;
+  height: 100%;
+  background: #ffffff;
+  border-right: 1px solid #e6ecf2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); // Animación más fluida
+  overflow: hidden;
+  z-index: 1000;
+
+  &__top {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; // Centrado cuando está colapsado
+    padding: 0 15px;
+    transition: all 0.3s ease;
+
+    img {
+      width: 35px; // Tamaño pequeño para modo icono
+      height: auto;
+      object-fit: contain;
+      transition: width 0.3s ease;
+    }
+  }
+
+  /* =========================
+     EXPANSIÓN (Hover sobre la barra)
+  ========================= */
+  &:hover {
+    width: 240px;
+    &__top img {
+      width: 240px; // Logo más grande al expandir
+    }
+
+    .label {
+      width: auto !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      margin-left: 15px !important; // Espacio entre icono y texto
+    }
+
+    .user-info {
+      opacity: 1 !important;
+      visibility: visible !important;
+      width: auto !important;
+    }
+  }
+
+  /* =========================
+     MENU
+  ========================= */
+  &__menu {
+    flex: 1;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+
+      li {
+        margin: 4px 10px;
+
+        button {
+          width: 100%;
+          border: none;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          padding: 12px 14px;
+          border-radius: 12px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          overflow: hidden; // Vital para esconder el texto
+
+          mat-icon {
+            font-size: 24px;
+            min-width: 24px;
+            color: #4b5563;
+          }
+
+          /* TEXTO (Label corregido) */
+          .label {
+            opacity: 0;
+            visibility: hidden;
+            width: 0; // En lugar de display: none
+            white-space: nowrap;
+            font-size: 14px;
+            font-weight: 500;
+            color: #1f2937;
+            transition: opacity 0.2s ease, width 0.2s ease;
+          }
+
+          &:hover {
+            background: #f3f4f6;
+            mat-icon { color: #2e7d32; }
+          }
+        }
+
+        /* ESTADO ACTIVO (Verde Institucional) */
+        &.active button {
+          background: #2e7d32; // Color de tu botón "INGRESAR"
+          box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+
+          mat-icon, .label {
+            color: #ffffff !important;
+          }
+        }
+      }
+    }
+  }
+
+  /* =========================
+     FOOTER
+  ========================= */
+  &__footer {
+    padding: 15px;
+    border-top: 1px solid #f3f4f6;
+
+    .user {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 12px;
+      overflow: hidden;
+
+      mat-icon { color: #4b5563; }
+
+      .user-info {
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        margin-left: 12px;
+        transition: 0.2s;
+
+        h4 {
+          margin: 0;
+          font-size: 14px;
+          color: #1f2937;
+          white-space: nowrap;
+        }
+        span {
+          font-size: 12px;
+          color: #6b7280;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

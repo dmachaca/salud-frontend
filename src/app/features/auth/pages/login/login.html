@@ -1,0 +1,48 @@
+<div class="container-login">
+
+  <div class="login-wrapper">
+    <form class="login-card" [formGroup]="form" (ngSubmit)="login()">
+
+      <img class="logo-salud" src="/assets/logos/citas-svg.svg" />
+
+      <h1 class="login-title">SALUD</h1>
+      <h2 class="login-subtitle">Sistema de Gestión de Citas</h2>
+
+      <div class="form-fields">
+
+        <app-c-input
+          formControlName="usuario"
+          label="Usuario"
+          placeholder="Ingresa tu usuario"
+          [submitted]="submitted">
+        </app-c-input>
+
+        <app-c-input
+          formControlName="clave"
+          label="Contraseña"
+          type="password"
+          placeholder="Ingresa tu contraseña"
+          [submitted]="submitted">
+        </app-c-input>
+
+        <button type="submit" class="login-button" [disabled]="loading">
+          {{ loading ? 'Cargando...' : 'INGRESAR' }}
+        </button>
+
+        <a class="olvideContrasena" (click)="onOlvidastePassword()">
+          ¿Olvidaste tu contraseña?
+        </a>
+
+      </div>
+
+    </form>
+  </div>
+
+  <!-- FOOTER FUERA -->
+  <footer class="chrome-info">
+    <p>Navegador recomendado</p>
+    <img src="/assets/img/chrome-logo.svg" />
+    <p>Versión 1.0.0</p>
+  </footer>
+
+</div>
