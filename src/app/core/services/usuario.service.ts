@@ -34,7 +34,6 @@ export class UsuarioService {
   logout(): void {
     const refreshToken = this.obtenerItem(SESSION_CONST.REFRESH_TOKEN);
     if (refreshToken) {
-      // Coincide con tu @PostMapping("/logout") que recibe un RefreshInputDto
       this.http.post(`${this.baseUrl}/logout`, { refreshToken }).subscribe();
     }
     sessionStorage.clear();
