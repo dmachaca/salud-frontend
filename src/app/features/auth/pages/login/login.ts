@@ -1,14 +1,28 @@
 import { Component, inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-import { CInput } from '../../../../shared/components/c-input/c-input';
-import { switchMap, from, finalize } from 'rxjs';
+import { CommonModule } from '@angular/common';
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  ReactiveFormsModule
+} from '@angular/forms';
+import { HttpErrorResponse } from '@angular/common/http';
+import { from, Observer, switchMap } from 'rxjs';
 
-import {UsuarioService} from '../../../../core/services/usuario.service';
-import {RecaptchaService} from '../../../../core/services/recapcha.service';
-import {AuthOutputDto, LoginInputDto} from '../../../../core/models/auth.model';
-import {GenericResponse} from '../../../../core/models/generic-response.model';
+import { CInput } from '../../../../shared/components/c-input/c-input';
+import { UsuarioService } from '../../../../core/services/usuario.service';
+import { RecaptchaService } from '../../../../core/services/recapcha.service';
+
+import {
+  AuthOutputDto,
+  LoginInputDto
+} from '../../../../core/models/auth/auth.model';
+import { GenericResponse } from '../../../../core/models/generic-response.model';
+import {createModalOwnMessage, handleError} from '../../../../utils/funciones';
+import {POPUP_TIPO} from '../../../../core/constants/constantes';
+import {MatDialog} from '@angular/material/dialog';
+import {PopRegistroUsuario} from '../../components/pop-registro-usuario/pop-registro-usuario';
 
 @Component({
   selector: 'app-login',
@@ -23,6 +37,7 @@ export class Login {
   private router = inject(Router);
   private usuarioService = inject(UsuarioService);
   private recaptchaService = inject(RecaptchaService);
+  private dialog = inject(MatDialog);
 
   form: FormGroup = this.fb.group({
     usuario: ['', [Validators.required, Validators.minLength(3)]],
@@ -31,57 +46,99 @@ export class Login {
 
   submitted = false;
   loading = false;
+  bloquear = false;
 
-  login() {
+  /* =========================
+     LOGIN
+  ========================= */
+  login(): void {
+    if (this.bloquear) return;
+
     this.submitted = true;
 
     if (this.form.invalid) {
       this.form.markAllAsTouched();
+      alert('Formulario inválido');
       return;
     }
 
+    this.bloquear = true;
     this.loading = true;
 
     from(this.recaptchaService.execute('login'))
-      .pipe(
-        switchMap((recaptcha: string) => {
-
-          const request: LoginInputDto = {
-            username: this.form.value.usuario!,
-            password: this.form.value.clave!,
-            recaptcha
-          };
-
-          return this.usuarioService.login(request);
-        }),
-        finalize(() => this.loading = false)
-      )
-      .subscribe({
-        next: (res: GenericResponse<AuthOutputDto>) => {
-
-          if (!res.success || !res.data) {
-            alert(res.message);
-            return;
-          }
-
-          this.usuarioService.guardarDatosSesion(res.data);
-
-          this.router.navigate(['/dashboard']);
-        },
-
-        error: (err) => {
-          console.error(err);
-
-          // manejo elegante
-          if (err?.message?.includes('recaptcha')) {
-            alert('Error con reCAPTCHA. Intente nuevamente.');
-          } else {
-            alert('Error en el login');
-          }
-        }
-      });
+      .pipe(switchMap(this.getLoginSwitchMap()))
+      .subscribe(this.getLoginObserver());
   }
-  onOlvidastePassword() {
-    alert('Recuperación de contraseña (demo)');
+
+  /* =========================
+     SWITCHMAP
+  ========================= */
+  private getLoginSwitchMap(): (recaptcha: string) => ReturnType<UsuarioService['login']> {
+    return (recaptcha: string) => {
+
+      const request: LoginInputDto = {
+        username: this.form.get('usuario')!.value,
+        password: this.form.get('clave')!.value,
+        recaptcha
+      };
+
+      return this.usuarioService.login(request);
+    };
+  }
+
+  /* =========================
+     OBSERVER
+  ========================= */
+  private getLoginObserver(): Observer<GenericResponse<AuthOutputDto>> {
+    return {
+      next: (response) => {
+
+        if (!response.success || !response.data) {
+          this.resetState();
+          createModalOwnMessage(POPUP_TIPO.ERROR_LOGIN, this.dialog,null, response.message)
+          return;
+        }
+
+        this.usuarioService.guardarDatosSesion(response.data);
+
+        this.router.navigate(['/dashboard']);
+
+      },
+
+      error: (error: HttpErrorResponse) => {
+        this.resetState();
+        const mensajeBackend = error.error?.message || 'Ocurrió un error inesperado';
+        createModalOwnMessage(
+          POPUP_TIPO.ERROR_LOGIN,
+          this.dialog,
+          null,
+          mensajeBackend
+        );
+        handleError(error, this.router);
+      },
+
+      complete: () => {
+        this.resetState();
+      }
+    };
+  }
+
+  /* =========================
+     UTIL
+  ========================= */
+  private resetState(): void {
+    this.loading = false;
+    this.bloquear = false;
+  }
+
+  onOlvidastePassword(): void {
+    alert('Recuperación de contraseña');
+  }
+
+  abrirRegistro() {
+    this.dialog.open(PopRegistroUsuario, {
+      width: '420px',
+      disableClose: true
+    });
   }
 }

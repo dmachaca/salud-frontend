@@ -1,0 +1,45 @@
+/* Contenedor del contenido del diálogo */
+::ng-deep .mat-mdc-dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden !important; // Evita que aparezcan barras de scroll si el logo es grande
+  padding: 10px 24px !important;
+}
+
+/* El contenedor de tu imagen */
+.imgRecover {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+
+  img {
+    /* Ajusta estos valores al tamaño que desees (ejemplo: 80px o 100px) */
+    width: 85px !important;
+    height: 85px !important;
+    min-width: 85px;
+    min-height: 85px;
+
+    object-fit: contain; // Mantiene la proporción sin deformar
+    display: block;
+  }
+}
+
+/* Ajuste del título para que no se corte arriba */
+.modalHead {
+  padding-top: 10px;
+  margin-bottom: 5px !important;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #1d352d;
+}
+
+/* El mensaje de texto */
+.pop-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+}

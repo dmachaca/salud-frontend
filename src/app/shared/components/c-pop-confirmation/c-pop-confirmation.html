@@ -1,0 +1,22 @@
+<div class="modalGen">
+  <h1 class="modalHead titulo3 recover">{{ title }}</h1>
+
+  <mat-dialog-content class="mat-typography">
+    <div class="imgRecover">
+      <img [src]="getIcon()" alt="icono" />
+    </div>
+
+    @if (message) {
+      <p class="pop-message" [innerHTML]="message"></p>
+    }
+  </mat-dialog-content>
+
+  <mat-dialog-actions class="d-flex txtCenter">
+    @if (isYesNo) {
+      <button class="button_estilo3 w-90" (click)="cerrar()">NO</button>
+      <button class="button_estilo1 w-90" (click)="aceptar()">SÍ</button>
+    } @else {
+      <button class="button_estilo1 w-90" (click)="aceptar()">ACEPTAR</button>
+    }
+  </mat-dialog-actions>
+</div>

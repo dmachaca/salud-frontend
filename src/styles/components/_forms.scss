@@ -1,88 +1,100 @@
-/* CONTENEDOR */
-.mat-mdc-form-field {
-  width: 100%;
-  margin-bottom: 18px;
-}
+  /* CONTENEDOR */
+  .mat-mdc-form-field {
+    width: 100%;
+    margin-bottom: 0; /* 🔥 eliminamos conflicto con gap */
+  }
 
-/* WRAPPER */
-.mat-mdc-text-field-wrapper {
-  border-radius: 12px;
-  background: #fafafa;
-  transition: all 0.25s ease;
-}
+  /* WRAPPER */
+  .mat-mdc-text-field-wrapper {
+    height: 42px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+  }
+  /* ALTURA GLOBAL CONSISTENTE */
+  .mat-mdc-text-field-wrapper {
+    height: var(--input-height);
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+  }
 
-/* BORDE NORMAL */
-.mdc-notched-outline__leading,
-.mdc-notched-outline__notch,
-.mdc-notched-outline__trailing {
-  border-color: var(--color-border);
-}
+  /*  CONTENIDO INTERNO */
+  .mat-mdc-form-field-flex {
+    height: 100% !important;
+    align-items: center !important;
+  }
 
-/* HOVER */
-.mat-mdc-form-field:hover .mdc-notched-outline__leading,
-.mat-mdc-form-field:hover .mdc-notched-outline__notch,
-.mat-mdc-form-field:hover .mdc-notched-outline__trailing {
-  border-color: var(--color-primary-light);
-}
+  /*  INPUT REAL */
+  .mat-mdc-input-element {
+    height: 100%;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+  }
 
-/* FOCUS (CLAVE) */
-.mat-mdc-form-field.mat-focused .mdc-notched-outline__leading,
-.mat-mdc-form-field.mat-focused .mdc-notched-outline__notch,
-.mat-mdc-form-field.mat-focused .mdc-notched-outline__trailing {
-  border-color: var(--color-primary);
-  border-width: 2px;
-}
+  /* BORDE NORMAL */
+  .mdc-notched-outline__leading,
+  .mdc-notched-outline__notch,
+  .mdc-notched-outline__trailing {
+    border-color: var(--color-border);
+  }
 
-/* LABEL NORMAL */
-.mat-mdc-form-field .mdc-floating-label {
-  color: #6b7280;
-  font-weight: 500;
-}
+  /* HOVER */
+  .mat-mdc-form-field:hover .mdc-notched-outline__leading,
+  .mat-mdc-form-field:hover .mdc-notched-outline__notch,
+  .mat-mdc-form-field:hover .mdc-notched-outline__trailing {
+    border-color: var(--color-primary-light);
+  }
 
-/* LABEL FOCUS */
-.mat-mdc-form-field.mat-focused .mdc-floating-label {
-  color: var(--color-primary);
-}
+  /* FOCUS */
+  .mat-mdc-form-field.mat-focused .mdc-notched-outline__leading,
+  .mat-mdc-form-field.mat-focused .mdc-notched-outline__notch,
+  .mat-mdc-form-field.mat-focused .mdc-notched-outline__trailing {
+    border-color: var(--color-primary);
+    border-width: 2px;
+  }
 
-/* TEXTO INPUT */
-.mat-mdc-input-element {
-  color: var(--color-text);
-  font-size: 14px;
-}
+  /* LABEL NORMAL */
+  .mat-mdc-form-field .mdc-floating-label {
+    color: #6b7280;
+    font-weight: 500;
+  }
 
-/* PLACEHOLDER */
-.mat-mdc-input-element::placeholder {
-  color: #9ca3af;
-}
+  /* LABEL FOCUS */
+  .mat-mdc-form-field.mat-focused .mdc-floating-label {
+    color: var(--color-primary);
+  }
 
-/* ERROR */
-.mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__leading,
-.mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__notch,
-.mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__trailing {
-  border-color: var(--color-danger);
-}
+  /* INPUT TEXT */
+  .mat-mdc-input-element {
+    color: var(--color-text);
+    font-size: 14px;
+  }
 
-/* LABEL ERROR */
-.mat-mdc-form-field.mat-form-field-invalid .mdc-floating-label {
-  color: var(--color-danger);
-}
+  /* PLACEHOLDER */
+  .mat-mdc-input-element::placeholder {
+    color: #9ca3af;
+  }
 
-/* ANIMACIÓN SUTIL */
-.mat-mdc-text-field-wrapper:hover {
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
+  /* ERROR */
+  .mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__leading,
+  .mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__notch,
+  .mat-mdc-form-field.mat-form-field-invalid .mdc-notched-outline__trailing {
+    border-color: var(--color-danger);
+  }
 
-/* DISABLED */
-.mat-mdc-form-field.mat-form-field-disabled {
-  opacity: 0.6;
-}
+  /* LABEL ERROR */
+  .mat-mdc-form-field.mat-form-field-invalid .mdc-floating-label {
+    color: var(--color-danger);
+  }
 
-.mat-mdc-form-field.mat-focused .mdc-notched-outline__leading,
-.mat-mdc-form-field.mat-focused .mdc-notched-outline__notch,
-.mat-mdc-form-field.mat-focused .mdc-notched-outline__trailing {
-  border-color: #2E7D32 !important;
-}
+  /* HOVER EFFECT */
+  .mat-mdc-text-field-wrapper:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
 
-.mat-mdc-form-field.mat-focused .mdc-floating-label {
-  color: #2E7D32 !important;
-}
+  /* DISABLED */
+  .mat-mdc-form-field.mat-form-field-disabled {
+    opacity: 0.6;
+  }

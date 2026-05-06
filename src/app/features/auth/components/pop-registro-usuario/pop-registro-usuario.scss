@@ -1,0 +1,85 @@
+:host {
+  display: block;
+}
+
+/* CONTENEDOR MODAL */
+.modal-container {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 30px;
+  box-sizing: border-box; /* 👈 CLAVE */
+
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  overflow: hidden; /* 👈 evita scroll horizontal */
+}
+
+/* TITULO */
+.modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1B3A2B;
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUTS */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* BOTONES */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* BOTON CANCELAR */
+.btn-cancel {
+  height: 40px;
+  padding: 0 20px;
+
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+
+  background: #f3f4f6;
+  color: #374151;
+
+  cursor: pointer;
+}
+
+/* BOTON PRINCIPAL VERDE */
+.btn-primary {
+  height: 40px;
+  padding: 0 20px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: linear-gradient(90deg, #2E7D32, #66BB6A);
+  color: white;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* HOVER */
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-cancel:hover {
+  background: #e5e7eb;
+}

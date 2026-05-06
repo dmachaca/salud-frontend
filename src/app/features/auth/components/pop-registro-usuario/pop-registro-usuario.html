@@ -1,0 +1,69 @@
+<div class="modal-container">
+
+  <h1 class="modal-title">Crear cuenta</h1>
+
+  <form [formGroup]="form" class="modal-form">
+
+    <div class="form-fields">
+
+      <app-c-input
+        formControlName="nombres"
+        label="Nombres"
+        placeholder="Ingresa tus nombres"
+        [submitted]="submitted">
+      </app-c-input>
+
+      <app-c-input
+        formControlName="apellidoPaterno"
+        label="Apellido Paterno"
+        placeholder="Ingresa tu apellido"
+        [submitted]="submitted">
+      </app-c-input>
+
+      <app-c-input
+        formControlName="dni"
+        label="DNI"
+        placeholder="Ingresa tu DNI"
+        [submitted]="submitted">
+      </app-c-input>
+
+      <app-c-input
+        formControlName="usuario"
+        label="Usuario"
+        placeholder="Nombre de usuario"
+        [submitted]="submitted">
+      </app-c-input>
+
+      <app-c-input
+        formControlName="correo"
+        label="Correo"
+        placeholder="correo@email.com"
+        [submitted]="submitted">
+      </app-c-input>
+
+      <app-c-input
+        formControlName="clave"
+        label="Contraseña"
+        type="password"
+        placeholder="Contraseña segura"
+        [submitted]="submitted">
+      </app-c-input>
+
+    </div>
+
+    <!-- ACCIONES -->
+    <div class="modal-actions">
+
+      <button type="button" class="btn-cancel" (click)="cerrar()">
+        Cancelar
+      </button>
+
+      <button type="button" class="btn-primary" (click)="registrar()">
+        Registrar
+      </button>
+
+    </div>
+
+  </form>
+
+</div>

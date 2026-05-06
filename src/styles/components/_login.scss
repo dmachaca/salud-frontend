@@ -41,7 +41,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px !important; // Espacio controlado entre inputs
+  gap: var(--space-sm);
 }
 
 .login-button {

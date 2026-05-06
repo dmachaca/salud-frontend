@@ -5,7 +5,7 @@ import { Observable, tap } from 'rxjs';
 
 import { environment } from '../../../environments/environment';
 import { SESSION_CONST } from '../constants/constantes';
-import { AuthOutputDto, LoginInputDto } from '../models/auth.model';
+import { AuthOutputDto, LoginInputDto } from '../models/auth/auth.model';
 import { GenericResponse } from '../models/generic-response.model';
 
 @Injectable({
